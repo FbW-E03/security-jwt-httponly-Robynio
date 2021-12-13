@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.15"
+  },
+  "scripts": {
+    "setup": "npm i && cd client && npm i",
+    "build": "cd client && npm run build",
+    "client-dev": "cd client && npm start"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}
