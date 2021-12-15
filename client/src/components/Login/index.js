@@ -1,3 +1,5 @@
+import axios from "axios";
+
 import styles from "./index.module.css";
 
 export default function Login() {
@@ -11,7 +13,14 @@ export default function Login() {
     };
 
     try {
-      await fetch("", {});
+      const response = await axios.post(
+        "http://localhost:3002/user/login",
+        data,
+        {
+          withCredentials: true,
+        }
+      );
+      // console.log(response);
     } catch (error) {
       console.log(error);
     }
